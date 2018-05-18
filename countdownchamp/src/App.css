@@ -1,0 +1,13 @@
+.App{
+	text-align: center;
+	font-size: 35px;
+	margin-top: 15%;
+}
+.App-title{
+	font-size: 50px;
+	background-color: yellow; 
+}
+.Clock-day, .Clock-hour, .Clock-minute, .Clock-second{
+	display: inline;
+	margin: 10px;
+}
