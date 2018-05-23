@@ -11,12 +11,21 @@ export class App extends Component {
 		}
 	}
 
-	/* Hàm tìm kiếm nghệ sỹ*/
+	/* Hàm tìm kiếm */
 	search(){
 		console.log('this.state',this.state);
 		const BASE_URL = 'https://api.spotify.com/v1/search?q=' + encodeURI(this.state.query) + '&type=artist&limit=1';
 
 		console.log('BASE_URL',BASE_URL);
+
+		const API_URL = 'https://randomuser.me/api/?results=100';
+
+		fetch(API_URL,{
+			method:'GET'
+		})
+		.then(res => res.json())
+		.then(data => console.log('data',data.results))
+			
 
 	}
 
